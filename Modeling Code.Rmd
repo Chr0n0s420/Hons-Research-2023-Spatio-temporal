@@ -156,7 +156,7 @@ ind <- as.logical(ind)
 sev.eku <- severity[ind,]
 
 #vulnerability data
-vulnerable <- readRDS("Wards_withDat_withVuln_withInitial.rds")
+vulnerable <- readRDS("Wards_withDat_withVuln_withInitial.rds") #missing, file too large for GitHub
 
 # make the vulnerability data centre on 1 with a range of 0.4
 vulnerable$Vulnerability <- (vulnerable$Vulnerability-min(vulnerable$Vulnerability))/(max(vulnerable$Vulnerability)-min(vulnerable$Vulnerability))  # normalise the data
